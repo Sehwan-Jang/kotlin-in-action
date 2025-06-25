@@ -1,8 +1,9 @@
 package kr.co.direa.kotlininaction
 
 import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.PostMapping
+import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RestController
-import kotlin.coroutines.coroutineContext
 
 @RestController
 class TestController {
@@ -20,6 +21,6 @@ class TestController {
 }
 
 data class Test(
-        val name: String,
+        val name : String,
         var age: Int? = null
 )
